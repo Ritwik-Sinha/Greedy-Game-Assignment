@@ -9,7 +9,8 @@ The project involves the following
 
 ![1](https://adorable-sprinkles-708361.netlify.app/3.png)
 
-The above example comtains the following properties
+The above example contains the following properties
+* Name
 * Position
 * Rotation
 * Scale
