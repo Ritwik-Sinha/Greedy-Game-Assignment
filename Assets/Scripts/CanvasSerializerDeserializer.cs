@@ -9,14 +9,25 @@ using UnityEngine;
 using UnityEngine.UI;
 
 /// <summary>
-/// This class is used to serialize canvas heirarchy into json
+/// This class is used to serialize desrialize canvas heirarchy into json
 /// </summary>
 
 [ExecuteInEditMode]
 public class CanvasSerializerDeserializer : MonoBehaviour
 {
+    /// <summary>
+    /// This refers to the json extension file in the pc, or any any text file in json format
+    /// </summary>
     public TextAsset jsonObject;
+    
+    /// <summary>
+    /// This refers to the final file that the modified canvas structure needs to be saved to
+    /// </summary>
     public string fileLocation;
+
+    /// <summary>
+    /// This contains the deserialized contents of the json file
+    /// </summary>
     public List<CanvasObject> canvasObjects;
 
     public static CanvasSerializerDeserializer instance;
@@ -34,6 +45,9 @@ public class CanvasSerializerDeserializer : MonoBehaviour
         // LoadFromJson();
     }
 
+    /// <summary>
+    /// Used to deserialize json
+    /// </summary>
     public void LoadFromJson()
     {
         string dataAsJson = jsonObject.text;
@@ -43,6 +57,9 @@ public class CanvasSerializerDeserializer : MonoBehaviour
         Debug.Log("Loaded json successfully");
     }
 
+    /// <summary>
+    /// Used to instantiate the nested heirarchy read from jsom into project heirarchy
+    /// </summary>
     public void InstanstiateFromJson()
     {
         if(canvasObjects!=null)
@@ -50,8 +67,11 @@ public class CanvasSerializerDeserializer : MonoBehaviour
             var outsideCanvas=Instantiate(Globals.instance.canvasPrefab);
             InstantiateRecursively(outsideCanvas.transform, canvasObjects);
         }
-    }
-
+    }   
+    
+    /// <summary>
+    /// Recursive method each handing one gameobject at a time
+    /// </summary>
     public void InstantiateRecursively(Transform parentTransform, List<CanvasObject> canvasObjects)
     {
         foreach (var child in canvasObjects)
@@ -83,6 +103,9 @@ public class CanvasSerializerDeserializer : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Used to copy one component to another
+    /// </summary>
     public T CopyComponent<T>(T original, GameObject destination) where T : Component
     {
         System.Type type = original.GetType();

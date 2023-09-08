@@ -8,6 +8,10 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 
+/// <summary>
+/// This class is used to create custom inspector for CanvasSerializerDeserializer script
+/// </summary>
+
 [CustomEditor(typeof(CanvasSerializerDeserializer))]
 [CanEditMultipleObjects]
 public class CanvasSerializerDesrializerEditor : Editor 
