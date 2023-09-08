@@ -51,7 +51,7 @@ The project used serialization and deserializaion technique for achieving the re
 
 EditorGUI has been used along with UnityEditor class to generate the custom Inspector for achieving the required results.
 
-The project also used recursive method for generation of Unity UGUI from the loaded json, 
+The project also used recursive method for generation of Unity UGUI from the loaded json. This can nest object templates allowing for complex heirarchies of objects.
 
 
 ### Thank you.
