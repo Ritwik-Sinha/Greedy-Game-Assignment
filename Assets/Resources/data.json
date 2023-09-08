@@ -1,0 +1,108 @@
+[
+    {
+        "Name": "CanvasObject name1",
+        "Transform": {
+            "Position": {
+                "x": 200.1,
+                "y": 150.1,
+                "z": 1.1
+            },
+            "Rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 180
+            },
+            "Scale": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1.1
+            }
+        },
+        "TextMeshProUGUI": {
+            "Text": "1. The text will appear here",
+            "FontColor": "#CC55FF",
+            "FontSize": 20.0
+        },
+        "ChildObjects": [
+            {
+                "Name": "CanvasObject name2",
+                "Transform": {
+                    "Position": {
+                        "x": 150.1,
+                        "y": 200.1,
+                        "z": 1.1
+                    },
+                    "Rotation": {
+                        "x": 1.1,
+                        "y": 1.1,
+                        "z": 1.1
+                    },
+                    "Scale": {
+                        "x": 1.1,
+                        "y": 1.1,
+                        "z": 1.1
+                    }
+                },
+                "TextMeshProUGUI": {
+                    "Text": "",
+                    "FontColor": "",
+                    "FontSize": 0.0
+                },
+                "ChildObjects": []
+            }
+        ]
+    },
+    {
+        "Name": "CanvasObject name3",
+        "Transform": {
+            "Position": {
+                "x": 300.1,
+                "y": 300.1,
+                "z": 1.1
+            },
+            "Rotation": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1.1
+            },
+            "Scale": {
+                "x": 1.1,
+                "y": 1.1,
+                "z": 1.1
+            }
+        },
+        "TextMeshProUGUI": {
+            "Text": "2. The text will appear here",
+            "FontColor": "#FF33BB",
+            "FontSize": 25.0
+        },
+        "ChildObjects": [
+            {
+                "Name": "CanvasObject name4",
+                "Transform": {
+                    "Position": {
+                        "x": 600.1,
+                        "y": 300.1,
+                        "z": 1.1
+                    },
+                    "Rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "Scale": {
+                        "x": 1.1,
+                        "y": 1.1,
+                        "z": 1.1
+                    }
+                },
+                "TextMeshProUGUI": {
+                    "Text": "3. The text will appear here",
+                    "FontColor": "#FF6633",
+                    "FontSize": 30.0
+                },
+                "ChildObjects": []
+            }
+        ]
+    }
+]
